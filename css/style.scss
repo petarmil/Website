@@ -1,0 +1,154 @@
+p {
+    color: #6b6b6b;
+}
+body {
+    background: #f6f6f6;
+}
+
+/*********************************** MOBILE MENU *************************************/
+
+#mobile-menu {
+    background: #ffffffea;
+    position: absolute;
+    width: 50vw;
+    right: 0;
+    z-index: 2;
+
+    display: none;
+
+ 
+
+    a {
+        color: #4e4e4e;
+        display: block;
+        &:hover {
+            color: #000000;
+            transition: all ease 0.7s;
+        }
+    }
+}
+
+/*********************************** HEADER *************************************/
+
+header {
+    height: 12vh;
+    background: #ffffff;
+    #hamburger {
+        a {
+            color: #000000;
+        }
+    }
+    #nav {
+        a {
+            color: #6b6b6b;
+            font-weight: bold;
+            &:hover {
+                color: #000000;
+                transition: all ease 0.7s;
+            }
+        }
+    }
+
+    #headerlogo {
+        color: #525254;
+    }
+}
+@media (max-width: 1200px) {
+    header {
+        #headerlogo {
+            font-size: 35px !important;
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width: 768px) {
+    header {
+        #headerlogo {
+            font-size: 20px !important;
+        }
+    }
+}
+
+/*********************************** HERO *************************************/
+
+#hero {
+    background: url(../imgs/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+
+    h2 {
+        background-color: #32c18a98;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        h2 {
+            font-size: 20px !important;
+        }
+    }
+}
+
+/*********************************** ABOUT *************************************/
+
+#about {
+    background-color: #f6f6f6;
+}
+
+/*********************************** WORK *************************************/
+
+#work {
+    background-color: #f6f6f6;
+    img {
+        transition: all ease 1s;
+        &:hover {
+            filter: brightness(120%);
+            transition: all ease 1s;
+        }
+    }
+}
+
+/*********************************** BLOG *************************************/
+
+#blog {
+    background-color: #f6f6f6;
+    img {
+        transition: all ease 1s;
+        &:hover {
+            filter: brightness(120%);
+            transition: all ease 1s;
+        }
+    }
+}
+
+/*********************************** FOOTER *************************************/
+
+footer {
+    #footerbottom {
+        background: #111;
+        border-bottom: 8px solid #222222;
+    }
+    #smallpad {
+        a {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+    background-color: #222222;
+    a {
+        color: #b9b9b9;
+        border-bottom: 1px solid #b9b9b9;
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: all ease 0.5s;
+        &:hover {
+            transition: all ease 0.7s;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #525254;
+        }
+    }
+}
